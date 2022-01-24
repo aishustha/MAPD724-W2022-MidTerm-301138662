@@ -70,6 +70,10 @@
 		618C0A9B279E414F007B128C /* dock51.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A65279E414F007B128C /* dock51.woff2 */; };
 		618C0A9C279E414F007B128C /* Dock51.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A66279E414F007B128C /* Dock51.ttf */; };
 		618C0A9E279E447C007B128C /* ocean.png in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A9D279E447C007B128C /* ocean.png */; };
+		618C0AA1279E508E007B128C /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C0AA0279E508E007B128C /* Ocean.swift */; };
+		618C0AA4279E50BA007B128C /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C0AA3279E50BA007B128C /* Plane.swift */; };
+		618C0AA7279E5139007B128C /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C0AA6279E5139007B128C /* GameObject.swift */; };
+		618C0AA9279E515D007B128C /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C0AA8279E515D007B128C /* GameProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +141,10 @@
 		618C0A65279E414F007B128C /* dock51.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dock51.woff2; sourceTree = "<group>"; };
 		618C0A66279E414F007B128C /* Dock51.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dock51.ttf; sourceTree = "<group>"; };
 		618C0A9D279E447C007B128C /* ocean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ocean.png; path = ../../../../../../../Downloads/ocean.png; sourceTree = "<group>"; };
+		618C0AA0279E508E007B128C /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		618C0AA3279E50BA007B128C /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		618C0AA6279E5139007B128C /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		618C0AA8279E515D007B128C /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +177,8 @@
 		618C0A14279E40E5007B128C /* ICE-1 */ = {
 			isa = PBXGroup;
 			children = (
+				618C0AA5279E511E007B128C /* Core */,
+				618C0A9F279E5075007B128C /* GameObjects */,
 				618C0A15279E40E5007B128C /* AppDelegate.swift */,
 				618C0A17279E40E5007B128C /* GameScene.sks */,
 				618C0A19279E40E5007B128C /* Actions.sks */,
@@ -274,6 +284,24 @@
 				618C0A66279E414F007B128C /* Dock51.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		618C0A9F279E5075007B128C /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				618C0AA0279E508E007B128C /* Ocean.swift */,
+				618C0AA3279E50BA007B128C /* Plane.swift */,
+			);
+			path = GameObjects;
+			sourceTree = "<group>";
+		};
+		618C0AA5279E511E007B128C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				618C0AA6279E5139007B128C /* GameObject.swift */,
+				618C0AA8279E515D007B128C /* GameProtocol.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,9 +432,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618C0AA1279E508E007B128C /* Ocean.swift in Sources */,
 				618C0A1C279E40E5007B128C /* GameScene.swift in Sources */,
+				618C0AA7279E5139007B128C /* GameObject.swift in Sources */,
+				618C0AA4279E50BA007B128C /* Plane.swift in Sources */,
 				618C0A1E279E40E5007B128C /* GameViewController.swift in Sources */,
 				618C0A16279E40E5007B128C /* AppDelegate.swift in Sources */,
+				618C0AA9279E515D007B128C /* GameProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
