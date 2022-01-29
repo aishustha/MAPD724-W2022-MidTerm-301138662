@@ -40,7 +40,7 @@ class GameScene: SKScene
         
     }
     
-    
+    //cgpoint - have x and y coordinates
     func touchDown(atPoint pos : CGPoint)
     {
         plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -495))

@@ -8,6 +8,7 @@
 import GameplayKit
 import SpriteKit
 
+//ocean going to inherit from game object
 class Ocean : GameObject
 {
     
@@ -22,15 +23,17 @@ class Ocean : GameObject
         fatalError("init(coder:) has not been implemented")
     }
     
-    //LifeCycle
+    //LifeCycle functions
     override func CheckBounds()
     {
+        //if position of my ocean is less than or equal to
         if(position.y <= -773)
         {
             Reset()
         }
     }
     
+    //reset - whenever i'm in bottom it resets
     override func Reset()
     {
         position.y = 773
@@ -39,6 +42,7 @@ class Ocean : GameObject
     //Initialization
     override func Start()
     {
+        //layering top of each other
         zPosition = 0
         verticalSpeed = 5.0
     }

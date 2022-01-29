@@ -8,6 +8,7 @@
 import GameplayKit
 import SpriteKit
 
+//plane inherit from gameobject
 class Plane : GameObject
 {
     //initializer
@@ -51,6 +52,7 @@ class Plane : GameObject
     
     func TouchMove(newPos: CGPoint)
     {
+        //jump to new position
         position = newPos
     }
 }
