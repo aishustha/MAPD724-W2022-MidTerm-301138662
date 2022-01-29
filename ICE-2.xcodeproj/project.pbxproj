@@ -77,7 +77,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		618C0A12279E40E5007B128C /* ICE-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ICE-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		618C0A12279E40E5007B128C /* ICE-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ICE-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		618C0A15279E40E5007B128C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		618C0A17279E40E5007B128C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		618C0A19279E40E5007B128C /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		618C0A09279E40E5007B128C = {
 			isa = PBXGroup;
 			children = (
-				618C0A14279E40E5007B128C /* ICE-1 */,
+				618C0A14279E40E5007B128C /* ICE-2 */,
 				618C0A13279E40E5007B128C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -169,12 +169,12 @@
 		618C0A13279E40E5007B128C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				618C0A12279E40E5007B128C /* ICE-1.app */,
+				618C0A12279E40E5007B128C /* ICE-2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		618C0A14279E40E5007B128C /* ICE-1 */ = {
+		618C0A14279E40E5007B128C /* ICE-2 */ = {
 			isa = PBXGroup;
 			children = (
 				618C0AA5279E511E007B128C /* Core */,
@@ -189,7 +189,7 @@
 				618C0A24279E40E5007B128C /* LaunchScreen.storyboard */,
 				618C0A2C279E414F007B128C /* Assets */,
 			);
-			path = "ICE-1";
+			path = "ICE-2";
 			sourceTree = "<group>";
 		};
 		618C0A2C279E414F007B128C /* Assets */ = {
@@ -307,9 +307,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		618C0A11279E40E5007B128C /* ICE-1 */ = {
+		618C0A11279E40E5007B128C /* ICE-2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 618C0A29279E40E5007B128C /* Build configuration list for PBXNativeTarget "ICE-1" */;
+			buildConfigurationList = 618C0A29279E40E5007B128C /* Build configuration list for PBXNativeTarget "ICE-2" */;
 			buildPhases = (
 				618C0A0E279E40E5007B128C /* Sources */,
 				618C0A0F279E40E5007B128C /* Frameworks */,
@@ -319,9 +319,9 @@
 			);
 			dependencies = (
 			);
-			name = "ICE-1";
+			name = "ICE-2";
 			productName = "ICE-1";
-			productReference = 618C0A12279E40E5007B128C /* ICE-1.app */;
+			productReference = 618C0A12279E40E5007B128C /* ICE-2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -339,7 +339,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 618C0A0D279E40E5007B128C /* Build configuration list for PBXProject "ICE-1" */;
+			buildConfigurationList = 618C0A0D279E40E5007B128C /* Build configuration list for PBXProject "ICE-2" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -352,7 +352,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				618C0A11279E40E5007B128C /* ICE-1 */,
+				618C0A11279E40E5007B128C /* ICE-2 */,
 			);
 		};
 /* End PBXProject section */
@@ -599,8 +599,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "slot.ICE-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "slot.ICE-2";
+				PRODUCT_NAME = "ICE-2";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -626,8 +626,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "slot.ICE-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "slot.ICE-2";
+				PRODUCT_NAME = "ICE-2";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -637,7 +637,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		618C0A0D279E40E5007B128C /* Build configuration list for PBXProject "ICE-1" */ = {
+		618C0A0D279E40E5007B128C /* Build configuration list for PBXProject "ICE-2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				618C0A27279E40E5007B128C /* Debug */,
@@ -646,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		618C0A29279E40E5007B128C /* Build configuration list for PBXNativeTarget "ICE-1" */ = {
+		618C0A29279E40E5007B128C /* Build configuration list for PBXNativeTarget "ICE-2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				618C0A2A279E40E5007B128C /* Debug */,

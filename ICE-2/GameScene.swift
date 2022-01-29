@@ -1,6 +1,6 @@
 //
 //  GameScene.swift
-//  ICE-1
+//  ICE-2
 //
 //  Created by Aishwarya Shrestha on 23/01/2022.
 //
