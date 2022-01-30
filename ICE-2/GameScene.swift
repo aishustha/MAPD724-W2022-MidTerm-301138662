@@ -20,6 +20,7 @@ class GameScene: SKScene
     var ocean: Ocean?
     var island: Island?
     var plane: Plane?
+    var clouds: [Cloud] = []
  
     
       
@@ -43,6 +44,17 @@ class GameScene: SKScene
         plane = Plane()
         plane?.position = CGPoint(x: 0, y: -495)
         addChild(plane!)
+        
+        //add 3 clouds to the scene
+        //array of clouds
+        //for loop
+        //creating and adding to the scene
+        for index in  0...2
+        {
+            let cloud: Cloud = Cloud()
+            clouds.append(cloud)
+            addChild(clouds[index])
+        }
         
         
     }
@@ -87,5 +99,12 @@ class GameScene: SKScene
         ocean?.Update()
         island?.Update()
         plane?.Update()
+       
+        //update each cloud in clouds
+        //randomly position
+        for cloud in clouds
+        {
+            cloud.Update()
+        }
     }
 }

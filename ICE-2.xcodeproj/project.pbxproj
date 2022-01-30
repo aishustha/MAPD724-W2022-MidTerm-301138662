@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6118FF7327A5FCA200C01303 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6118FF7227A5FCA200C01303 /* Island.swift */; };
+		6118FF7527A6400000C01303 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6118FF7427A6400000C01303 /* Cloud.swift */; };
 		618C0A16279E40E5007B128C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C0A15279E40E5007B128C /* AppDelegate.swift */; };
 		618C0A18279E40E5007B128C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A17279E40E5007B128C /* GameScene.sks */; };
 		618C0A1A279E40E5007B128C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A19279E40E5007B128C /* Actions.sks */; };
@@ -79,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		6118FF7227A5FCA200C01303 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		6118FF7427A6400000C01303 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		618C0A12279E40E5007B128C /* ICE-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ICE-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		618C0A15279E40E5007B128C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		618C0A17279E40E5007B128C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				618C0AA0279E508E007B128C /* Ocean.swift */,
 				618C0AA3279E50BA007B128C /* Plane.swift */,
 				6118FF7227A5FCA200C01303 /* Island.swift */,
+				6118FF7427A6400000C01303 /* Cloud.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				618C0AA1279E508E007B128C /* Ocean.swift in Sources */,
+				6118FF7527A6400000C01303 /* Cloud.swift in Sources */,
 				618C0A1C279E40E5007B128C /* GameScene.swift in Sources */,
 				6118FF7327A5FCA200C01303 /* Island.swift in Sources */,
 				618C0AA7279E5139007B128C /* GameObject.swift in Sources */,
