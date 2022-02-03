@@ -10,6 +10,9 @@ import GameplayKit
 
 class CollisionManager
 {
+    
+    public static var gameViewController: GameViewController?
+    
     //utility function
     public static func SquaredDistance(point1: CGPoint, point2: CGPoint) -> CGFloat
     {
@@ -43,11 +46,15 @@ class CollisionManager
                 switch(object2.name)
                 {
                 case "island":
-                    print("Collided with Island")
+                    ScoreManager.Score += 100
+                    gameViewController?.updateScoreLabel()
+                    Scene.run(SKAction.playSoundFileNamed("yay", waitForCompletion: false))
                     break
                     
                 case "cloud":
-                    print("Collided with Cloud")
+                    ScoreManager.Lives -= 1
+                    gameViewController?.updateLivesLabel()
+                    Scene.run(SKAction.playSoundFileNamed("thunder", waitForCompletion: false))
                     break
                     
                 default:

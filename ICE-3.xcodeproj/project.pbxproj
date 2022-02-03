@@ -60,9 +60,6 @@
 		618C0A8F279E414F007B128C /* explosion5.png in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A56279E414F007B128C /* explosion5.png */; };
 		618C0A90279E414F007B128C /* life.wav in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A58279E414F007B128C /* life.wav */; };
 		618C0A91279E414F007B128C /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A59279E414F007B128C /* explosion.mp3 */; };
-		618C0A92279E414F007B128C /* thunder.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A5A279E414F007B128C /* thunder.ogg */; };
-		618C0A93279E414F007B128C /* yay.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A5B279E414F007B128C /* yay.ogg */; };
-		618C0A94279E414F007B128C /* engine.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A5C279E414F007B128C /* engine.ogg */; };
 		618C0A95279E414F007B128C /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A5D279E414F007B128C /* coin.wav */; };
 		618C0A96279E414F007B128C /* bullet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A5E279E414F007B128C /* bullet.mp3 */; };
 		618C0A97279E414F007B128C /* textureAtlas.png in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A60279E414F007B128C /* textureAtlas.png */; };
@@ -77,6 +74,10 @@
 		618C0AA7279E5139007B128C /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C0AA6279E5139007B128C /* GameObject.swift */; };
 		618C0AA9279E515D007B128C /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C0AA8279E515D007B128C /* GameProtocol.swift */; };
 		61CC90D127AB521800CCEEC1 /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CC90D027AB521800CCEEC1 /* CollisionManager.swift */; };
+		61CC90D327AB5D0300CCEEC1 /* engine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CC90D227AB5D0300CCEEC1 /* engine.mp3 */; };
+		61CC90D527AB5D0B00CCEEC1 /* yay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CC90D427AB5D0B00CCEEC1 /* yay.mp3 */; };
+		61CC90D727AB5D1900CCEEC1 /* thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 61CC90D627AB5D1900CCEEC1 /* thunder.mp3 */; };
+		61CC90D927AB618A00CCEEC1 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CC90D827AB618A00CCEEC1 /* ScoreManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,9 +135,6 @@
 		618C0A56279E414F007B128C /* explosion5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion5.png; sourceTree = "<group>"; };
 		618C0A58279E414F007B128C /* life.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = life.wav; sourceTree = "<group>"; };
 		618C0A59279E414F007B128C /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
-		618C0A5A279E414F007B128C /* thunder.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = thunder.ogg; sourceTree = "<group>"; };
-		618C0A5B279E414F007B128C /* yay.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = yay.ogg; sourceTree = "<group>"; };
-		618C0A5C279E414F007B128C /* engine.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = engine.ogg; sourceTree = "<group>"; };
 		618C0A5D279E414F007B128C /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
 		618C0A5E279E414F007B128C /* bullet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bullet.mp3; sourceTree = "<group>"; };
 		618C0A60279E414F007B128C /* textureAtlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textureAtlas.png; sourceTree = "<group>"; };
@@ -151,6 +149,10 @@
 		618C0AA6279E5139007B128C /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		618C0AA8279E515D007B128C /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		61CC90D027AB521800CCEEC1 /* CollisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
+		61CC90D227AB5D0300CCEEC1 /* engine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = engine.mp3; sourceTree = "<group>"; };
+		61CC90D427AB5D0B00CCEEC1 /* yay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yay.mp3; sourceTree = "<group>"; };
+		61CC90D627AB5D1900CCEEC1 /* thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thunder.mp3; sourceTree = "<group>"; };
+		61CC90D827AB618A00CCEEC1 /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,9 +266,9 @@
 			children = (
 				618C0A58279E414F007B128C /* life.wav */,
 				618C0A59279E414F007B128C /* explosion.mp3 */,
-				618C0A5A279E414F007B128C /* thunder.ogg */,
-				618C0A5B279E414F007B128C /* yay.ogg */,
-				618C0A5C279E414F007B128C /* engine.ogg */,
+				61CC90D227AB5D0300CCEEC1 /* engine.mp3 */,
+				61CC90D427AB5D0B00CCEEC1 /* yay.mp3 */,
+				61CC90D627AB5D1900CCEEC1 /* thunder.mp3 */,
 				618C0A5D279E414F007B128C /* coin.wav */,
 				618C0A5E279E414F007B128C /* bullet.mp3 */,
 			);
@@ -317,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				61CC90D027AB521800CCEEC1 /* CollisionManager.swift */,
+				61CC90D827AB618A00CCEEC1 /* ScoreManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				618C0A76279E414F007B128C /* coin04.png in Resources */,
 				618C0A74279E414F007B128C /* restartButton.png in Resources */,
 				618C0A87279E414F007B128C /* explosion2.png in Resources */,
+				61CC90D327AB5D0300CCEEC1 /* engine.mp3 in Resources */,
 				618C0A6D279E414F007B128C /* island.png in Resources */,
 				618C0A80279E414F007B128C /* smallexplosion3.png in Resources */,
 				618C0A8C279E414F007B128C /* startButton.png in Resources */,
@@ -393,7 +397,6 @@
 				618C0A78279E414F007B128C /* smallexplosion5.png in Resources */,
 				618C0A90279E414F007B128C /* life.wav in Resources */,
 				618C0A91279E414F007B128C /* explosion.mp3 in Resources */,
-				618C0A92279E414F007B128C /* thunder.ogg in Resources */,
 				618C0A6A279E414F007B128C /* plane1.png in Resources */,
 				618C0A71279E414F007B128C /* ocean.gif in Resources */,
 				618C0A8D279E414F007B128C /* explosion6.png in Resources */,
@@ -407,13 +410,13 @@
 				618C0A9C279E414F007B128C /* Dock51.ttf in Resources */,
 				618C0A7F279E414F007B128C /* smallexplosion2.png in Resources */,
 				618C0A72279E414F007B128C /* coin08.png in Resources */,
-				618C0A93279E414F007B128C /* yay.ogg in Resources */,
 				618C0A73279E414F007B128C /* coin09.png in Resources */,
 				618C0A84279E414F007B128C /* nextButton.png in Resources */,
 				618C0A9B279E414F007B128C /* dock51.woff2 in Resources */,
 				618C0A7E279E414F007B128C /* coin02.png in Resources */,
 				618C0A7B279E414F007B128C /* smallexplosion6.png in Resources */,
 				618C0A98279E414F007B128C /* textureAtlas.json in Resources */,
+				61CC90D527AB5D0B00CCEEC1 /* yay.mp3 in Resources */,
 				618C0A89279E414F007B128C /* enemy2.png in Resources */,
 				618C0A8B279E414F007B128C /* explosion7.png in Resources */,
 				618C0A79279E414F007B128C /* coin05.png in Resources */,
@@ -427,9 +430,9 @@
 				618C0A26279E40E5007B128C /* LaunchScreen.storyboard in Resources */,
 				618C0A70279E414F007B128C /* planeflash1.png in Resources */,
 				618C0A75279E414F007B128C /* coin10.png in Resources */,
+				61CC90D727AB5D1900CCEEC1 /* thunder.mp3 in Resources */,
 				618C0A96279E414F007B128C /* bullet.mp3 in Resources */,
 				618C0A82279E414F007B128C /* coin01.png in Resources */,
-				618C0A94279E414F007B128C /* engine.ogg in Resources */,
 				618C0A7D279E414F007B128C /* cloud.png in Resources */,
 				618C0A68279E414F007B128C /* plane3.png in Resources */,
 				618C0A6C279E414F007B128C /* plane.png in Resources */,
@@ -458,6 +461,7 @@
 				618C0AA4279E50BA007B128C /* Plane.swift in Sources */,
 				618C0A1E279E40E5007B128C /* GameViewController.swift in Sources */,
 				618C0A16279E40E5007B128C /* AppDelegate.swift in Sources */,
+				61CC90D927AB618A00CCEEC1 /* ScoreManager.swift in Sources */,
 				618C0AA9279E515D007B128C /* GameProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

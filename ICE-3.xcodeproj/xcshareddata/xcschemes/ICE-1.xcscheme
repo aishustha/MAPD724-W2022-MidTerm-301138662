@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "618C0A11279E40E5007B128C"
-               BuildableName = "ICE-2.app"
+               BuildableName = "ICE-3.app"
                BlueprintName = "ICE-3"
                ReferencedContainer = "container:ICE-3.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "618C0A11279E40E5007B128C"
-            BuildableName = "ICE-2.app"
+            BuildableName = "ICE-3.app"
             BlueprintName = "ICE-3"
             ReferencedContainer = "container:ICE-3.xcodeproj">
          </BuildableReference>
@@ -69,7 +69,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "618C0A11279E40E5007B128C"
-            BuildableName = "ICE-2.app"
+            BuildableName = "ICE-3.app"
             BlueprintName = "ICE-3"
             ReferencedContainer = "container:ICE-3.xcodeproj">
          </BuildableReference>
