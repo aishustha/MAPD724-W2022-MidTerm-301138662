@@ -1,6 +1,6 @@
 //
 //  GameViewController.swift
-//  ICE-2
+//  ICE-3
 //
 //  Created by Aishwarya Shrestha on 23/01/2022.
 //
