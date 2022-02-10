@@ -12,9 +12,20 @@ import GameplayKit
 class GameViewController: UIViewController, GameManager {
    
 
+    //label
     @IBOutlet weak var ScoreLabel: UILabel!
     
     @IBOutlet weak var LivesLabel: UILabel!
+    
+    @IBOutlet weak var StartLabel: UILabel!
+    
+    @IBOutlet weak var EndLabel: UILabel!
+    
+    //button
+    @IBOutlet weak var StartButton: UIButton!
+    
+    @IBOutlet weak var EndButton: UIButton!
+    
     
     var currentScene: SKScene?
     
@@ -40,15 +51,13 @@ class GameViewController: UIViewController, GameManager {
         //Initialize the lives and score
         LivesLabel.isHidden = true
         ScoreLabel.isHidden = true
+        EndButton.isHidden = true
+        EndLabel.isHidden = true
         
         CollisionManager.gameViewController = self
         
-        SetScene(sceneName: "GameScene")
-        
-//        ScoreManager.Score = 0
-//        ScoreManager.Lives = 5
-//        updateLivesLabel()
-//        updateScoreLabel()
+        SetScene(sceneName: "StartScene")
+    
     }
 
     override var shouldAutorotate: Bool {
@@ -104,15 +113,50 @@ class GameViewController: UIViewController, GameManager {
     
     func PresentStartScene()
     {
+        StartButton.isHidden = false
+        StartLabel.isHidden = false
         ScoreLabel.isHidden = true
         LivesLabel.isHidden = true
     }
     
     func PresentEndScene()
     {
+        EndButton.isHidden = false
+        EndLabel.isHidden = false
         ScoreLabel.isHidden = true
         LivesLabel.isHidden = true
         SetScene(sceneName: "EndScene")
     }
     
+    
+    @IBAction func StartButton_Pressed(_ sender: UIButton)
+    {
+        
+        StartButton.isHidden = true
+        StartLabel.isHidden = true
+        ScoreLabel.isHidden = false
+        LivesLabel.isHidden = false
+
+        ScoreManager.Score = 0
+        ScoreManager.Lives = 5
+        updateLivesLabel()
+        updateScoreLabel()
+        
+        SetScene(sceneName: "GameScene")
+    }
+    
+    
+    @IBAction func EndButton_Pressed(_ sender: UIButton) {
+        EndButton.isHidden = true
+        EndLabel.isHidden = true
+        
+        ScoreLabel.isHidden = false
+        LivesLabel.isHidden = false
+
+        ScoreManager.Score = 0
+        ScoreManager.Lives = 5
+        updateLivesLabel()
+        updateScoreLabel()
+        SetScene(sceneName: "GameScene")
+    }
 }

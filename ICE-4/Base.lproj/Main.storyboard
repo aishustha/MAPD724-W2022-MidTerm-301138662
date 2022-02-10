@@ -11,37 +11,113 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="ICE_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="ICE_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBU-18-sTU">
-                                <rect key="frame" x="41" y="59" width="86" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBU-18-sTU">
+                                <rect key="frame" x="41" y="59" width="79.5" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Lives: 99">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Dock51"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 999999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxV-fl-x5L">
-                                <rect key="frame" x="224" y="59" width="144" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxV-fl-x5L">
+                                <rect key="frame" x="217.5" y="59" width="134" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Score: 999999">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Dock51"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtq-MD-Snm">
+                                <rect key="frame" x="95" y="566" width="224" height="74"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="restartButton" title=""/>
+                                <connections>
+                                    <action selector="EndButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="87T-8Z-wLC"/>
+                                    <action selector="StartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="dtW-65-Yz1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdR-0s-mOB">
+                                <rect key="frame" x="0.0" y="193" width="414" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="AEw-cy-pRB"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Mail Pilot">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="60" name="Dock51"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpv-Dv-Fx7">
+                                <rect key="frame" x="0.0" y="312" width="414" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="VNI-fB-Mva"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Game Over">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="60" name="Dock51"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXu-Dx-h8G">
+                                <rect key="frame" x="95" y="461" width="224" height="74"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="startButton"/>
+                                <connections>
+                                    <action selector="StartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="EIP-y7-97M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="GxV-fl-x5L" secondAttribute="trailing" constant="46" id="5rI-gB-8ec"/>
-                            <constraint firstItem="zBU-18-sTU" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="41" id="7yI-gu-Ell"/>
-                            <constraint firstItem="GxV-fl-x5L" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zBU-18-sTU" secondAttribute="trailing" constant="8" symbolic="YES" id="JL6-6q-Jwv"/>
-                            <constraint firstItem="GxV-fl-x5L" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="15" id="c88-z4-Ryj"/>
-                            <constraint firstItem="zBU-18-sTU" firstAttribute="baseline" secondItem="GxV-fl-x5L" secondAttribute="baseline" id="unG-XJ-i3U"/>
+                            <constraint firstItem="sdR-0s-mOB" firstAttribute="trailing" secondItem="hpv-Dv-Fx7" secondAttribute="trailing" id="Cma-LQ-DcF"/>
+                            <constraint firstItem="uXu-Dx-h8G" firstAttribute="top" secondItem="hpv-Dv-Fx7" secondAttribute="bottom" constant="37" id="HO8-G9-Hvk"/>
+                            <constraint firstItem="hpv-Dv-Fx7" firstAttribute="top" secondItem="sdR-0s-mOB" secondAttribute="bottom" constant="7" id="Jgg-nH-rXD"/>
+                            <constraint firstItem="uXu-Dx-h8G" firstAttribute="leading" secondItem="Dtq-MD-Snm" secondAttribute="leading" id="Mn0-J3-hks"/>
+                            <constraint firstItem="GxV-fl-x5L" firstAttribute="leading" secondItem="zBU-18-sTU" secondAttribute="trailing" constant="97" id="Vp8-U6-why"/>
+                            <constraint firstItem="zBU-18-sTU" firstAttribute="baseline" secondItem="GxV-fl-x5L" secondAttribute="baseline" id="XgL-pw-Elv"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="Dtq-MD-Snm" secondAttribute="bottom" constant="253" id="YKb-nW-7UB"/>
+                            <constraint firstItem="zBU-18-sTU" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="41" id="Yhp-VT-SAH"/>
+                            <constraint firstItem="sdR-0s-mOB" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="hDF-AO-Ts0"/>
+                            <constraint firstItem="sdR-0s-mOB" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="kT2-VV-PON"/>
+                            <constraint firstItem="zBU-18-sTU" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="15" id="lRh-5G-AR9"/>
+                            <constraint firstAttribute="bottom" secondItem="uXu-Dx-h8G" secondAttribute="bottom" constant="361" id="laV-Wg-e3x"/>
+                            <constraint firstItem="Dtq-MD-Snm" firstAttribute="top" secondItem="uXu-Dx-h8G" secondAttribute="bottom" constant="31" id="roR-gJ-afh"/>
+                            <constraint firstItem="sdR-0s-mOB" firstAttribute="leading" secondItem="hpv-Dv-Fx7" secondAttribute="leading" id="rrA-Zk-F4J"/>
+                            <constraint firstItem="uXu-Dx-h8G" firstAttribute="centerX" secondItem="hpv-Dv-Fx7" secondAttribute="centerX" id="zed-nu-ggk"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="EndButton" destination="Dtq-MD-Snm" id="gLy-v1-9Cj"/>
+                        <outlet property="EndLabel" destination="hpv-Dv-Fx7" id="jOs-I9-XcA"/>
                         <outlet property="LivesLabel" destination="zBU-18-sTU" id="pki-gX-dqx"/>
                         <outlet property="ScoreLabel" destination="GxV-fl-x5L" id="LlS-jI-NaD"/>
+                        <outlet property="StartButton" destination="uXu-Dx-h8G" id="Awk-bj-xUE"/>
+                        <outlet property="StartLabel" destination="sdR-0s-mOB" id="6M0-7r-eLU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
@@ -50,11 +126,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="restartButton" width="200" height="60"/>
+        <image name="startButton" width="200" height="60"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

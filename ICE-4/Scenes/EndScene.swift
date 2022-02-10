@@ -10,9 +10,20 @@ import GameplayKit
 
 class EndScene: SKScene
 {
+    //instance variables
+    var ocean: Ocean?
+    
     override func didMove(to view: SKView)
     {
+        screenWidth = frame.width
+        screenHeight = frame.height
+        
         name = "End"
+        
+        // add ocean to the scene
+        ocean = Ocean() // allocate memory
+        ocean?.position = CGPoint(x: 0, y: 773)
+        addChild(ocean!) // add the ocean to the scene
     }
     
     
@@ -53,6 +64,6 @@ class EndScene: SKScene
     
     override func update(_ currentTime: TimeInterval)
     {
-      
+        ocean?.Update()
     }
 }
