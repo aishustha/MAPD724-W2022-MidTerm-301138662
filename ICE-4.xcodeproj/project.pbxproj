@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		6118FF7327A5FCA200C01303 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6118FF7227A5FCA200C01303 /* Island.swift */; };
 		6118FF7527A6400000C01303 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6118FF7427A6400000C01303 /* Cloud.swift */; };
+		614E663E27B4931E00FE3221 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614E663D27B4931E00FE3221 /* GameManager.swift */; };
+		614E664027B4970900FE3221 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 614E663F27B4970900FE3221 /* StartScene.sks */; };
+		614E664227B4979300FE3221 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614E664127B4979300FE3221 /* StartScene.swift */; };
+		614E664527B499F800FE3221 /* EndScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614E664427B499F800FE3221 /* EndScene.swift */; };
+		614E664727B49A4000FE3221 /* EndScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 614E664627B49A4000FE3221 /* EndScene.sks */; };
 		618C0A16279E40E5007B128C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C0A15279E40E5007B128C /* AppDelegate.swift */; };
 		618C0A18279E40E5007B128C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A17279E40E5007B128C /* GameScene.sks */; };
 		618C0A1A279E40E5007B128C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 618C0A19279E40E5007B128C /* Actions.sks */; };
@@ -83,7 +88,12 @@
 /* Begin PBXFileReference section */
 		6118FF7227A5FCA200C01303 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		6118FF7427A6400000C01303 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
-		618C0A12279E40E5007B128C /* ICE-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ICE-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		614E663D27B4931E00FE3221 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		614E663F27B4970900FE3221 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
+		614E664127B4979300FE3221 /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		614E664427B499F800FE3221 /* EndScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScene.swift; sourceTree = "<group>"; };
+		614E664627B49A4000FE3221 /* EndScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EndScene.sks; sourceTree = "<group>"; };
+		618C0A12279E40E5007B128C /* ICE-4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ICE-4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		618C0A15279E40E5007B128C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		618C0A17279E40E5007B128C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		618C0A19279E40E5007B128C /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -166,10 +176,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		614E664327B497C500FE3221 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				614E663F27B4970900FE3221 /* StartScene.sks */,
+				614E664127B4979300FE3221 /* StartScene.swift */,
+				618C0A17279E40E5007B128C /* GameScene.sks */,
+				618C0A19279E40E5007B128C /* Actions.sks */,
+				618C0A1B279E40E5007B128C /* GameScene.swift */,
+				614E664427B499F800FE3221 /* EndScene.swift */,
+				614E664627B49A4000FE3221 /* EndScene.sks */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		618C0A09279E40E5007B128C = {
 			isa = PBXGroup;
 			children = (
-				618C0A14279E40E5007B128C /* ICE-3 */,
+				618C0A14279E40E5007B128C /* ICE-4 */,
 				618C0A13279E40E5007B128C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -177,28 +201,26 @@
 		618C0A13279E40E5007B128C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				618C0A12279E40E5007B128C /* ICE-3.app */,
+				618C0A12279E40E5007B128C /* ICE-4.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		618C0A14279E40E5007B128C /* ICE-3 */ = {
+		618C0A14279E40E5007B128C /* ICE-4 */ = {
 			isa = PBXGroup;
 			children = (
+				614E664327B497C500FE3221 /* Scenes */,
 				61CC90CF27AB51F900CCEEC1 /* Managers */,
 				618C0AA5279E511E007B128C /* Core */,
 				618C0A9F279E5075007B128C /* GameObjects */,
 				618C0A15279E40E5007B128C /* AppDelegate.swift */,
-				618C0A17279E40E5007B128C /* GameScene.sks */,
-				618C0A19279E40E5007B128C /* Actions.sks */,
-				618C0A1B279E40E5007B128C /* GameScene.swift */,
 				618C0A1D279E40E5007B128C /* GameViewController.swift */,
 				618C0A1F279E40E5007B128C /* Main.storyboard */,
 				618C0A22279E40E5007B128C /* Assets.xcassets */,
 				618C0A24279E40E5007B128C /* LaunchScreen.storyboard */,
 				618C0A2C279E414F007B128C /* Assets */,
 			);
-			path = "ICE-3";
+			path = "ICE-4";
 			sourceTree = "<group>";
 		};
 		618C0A2C279E414F007B128C /* Assets */ = {
@@ -311,6 +333,7 @@
 			children = (
 				618C0AA6279E5139007B128C /* GameObject.swift */,
 				618C0AA8279E515D007B128C /* GameProtocol.swift */,
+				614E663D27B4931E00FE3221 /* GameManager.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -327,9 +350,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		618C0A11279E40E5007B128C /* ICE-3 */ = {
+		618C0A11279E40E5007B128C /* ICE-4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 618C0A29279E40E5007B128C /* Build configuration list for PBXNativeTarget "ICE-3" */;
+			buildConfigurationList = 618C0A29279E40E5007B128C /* Build configuration list for PBXNativeTarget "ICE-4" */;
 			buildPhases = (
 				618C0A0E279E40E5007B128C /* Sources */,
 				618C0A0F279E40E5007B128C /* Frameworks */,
@@ -339,9 +362,9 @@
 			);
 			dependencies = (
 			);
-			name = "ICE-3";
+			name = "ICE-4";
 			productName = "ICE-1";
-			productReference = 618C0A12279E40E5007B128C /* ICE-3.app */;
+			productReference = 618C0A12279E40E5007B128C /* ICE-4.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -359,7 +382,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 618C0A0D279E40E5007B128C /* Build configuration list for PBXProject "ICE-3" */;
+			buildConfigurationList = 618C0A0D279E40E5007B128C /* Build configuration list for PBXProject "ICE-4" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -372,7 +395,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				618C0A11279E40E5007B128C /* ICE-3 */,
+				618C0A11279E40E5007B128C /* ICE-4 */,
 			);
 		};
 /* End PBXProject section */
@@ -390,6 +413,7 @@
 				618C0A87279E414F007B128C /* explosion2.png in Resources */,
 				61CC90D327AB5D0300CCEEC1 /* engine.mp3 in Resources */,
 				618C0A6D279E414F007B128C /* island.png in Resources */,
+				614E664727B49A4000FE3221 /* EndScene.sks in Resources */,
 				618C0A80279E414F007B128C /* smallexplosion3.png in Resources */,
 				618C0A8C279E414F007B128C /* startButton.png in Resources */,
 				618C0A9A279E414F007B128C /* dock51.woff in Resources */,
@@ -423,6 +447,7 @@
 				618C0A67279E414F007B128C /* bullet.png in Resources */,
 				618C0A6F279E414F007B128C /* clickMeButton.png in Resources */,
 				618C0A77279E414F007B128C /* smallexplosion4.png in Resources */,
+				614E664027B4970900FE3221 /* StartScene.sks in Resources */,
 				618C0A18279E40E5007B128C /* GameScene.sks in Resources */,
 				618C0A23279E40E5007B128C /* Assets.xcassets in Resources */,
 				618C0A7C279E414F007B128C /* coin06.png in Resources */,
@@ -453,12 +478,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				618C0AA1279E508E007B128C /* Ocean.swift in Sources */,
+				614E663E27B4931E00FE3221 /* GameManager.swift in Sources */,
 				6118FF7527A6400000C01303 /* Cloud.swift in Sources */,
 				61CC90D127AB521800CCEEC1 /* CollisionManager.swift in Sources */,
 				618C0A1C279E40E5007B128C /* GameScene.swift in Sources */,
 				6118FF7327A5FCA200C01303 /* Island.swift in Sources */,
 				618C0AA7279E5139007B128C /* GameObject.swift in Sources */,
 				618C0AA4279E50BA007B128C /* Plane.swift in Sources */,
+				614E664527B499F800FE3221 /* EndScene.swift in Sources */,
+				614E664227B4979300FE3221 /* StartScene.swift in Sources */,
 				618C0A1E279E40E5007B128C /* GameViewController.swift in Sources */,
 				618C0A16279E40E5007B128C /* AppDelegate.swift in Sources */,
 				61CC90D927AB618A00CCEEC1 /* ScoreManager.swift in Sources */,
@@ -623,8 +651,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "slot.ICE-3";
-				PRODUCT_NAME = "ICE-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "slot.ICE-4";
+				PRODUCT_NAME = "ICE-4";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -650,8 +678,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "slot.ICE-3";
-				PRODUCT_NAME = "ICE-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "slot.ICE-4";
+				PRODUCT_NAME = "ICE-4";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -661,7 +689,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		618C0A0D279E40E5007B128C /* Build configuration list for PBXProject "ICE-3" */ = {
+		618C0A0D279E40E5007B128C /* Build configuration list for PBXProject "ICE-4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				618C0A27279E40E5007B128C /* Debug */,
@@ -670,7 +698,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		618C0A29279E40E5007B128C /* Build configuration list for PBXNativeTarget "ICE-3" */ = {
+		618C0A29279E40E5007B128C /* Build configuration list for PBXNativeTarget "ICE-4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				618C0A2A279E40E5007B128C /* Debug */,

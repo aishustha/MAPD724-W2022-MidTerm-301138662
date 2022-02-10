@@ -1,6 +1,6 @@
 //
 //  GameScene.swift
-//  ICE-3
+//  ICE-4
 //
 //  Created by Aishwarya Shrestha on 23/01/2022.
 //
@@ -16,6 +16,8 @@ var screenHeight: CGFloat?
 
 class GameScene: SKScene
 {
+    var gameManager: GameManager?
+    
     // instance variables
     var ocean: Ocean?
     var island: Island?
