@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dock51.ttf">
+            <string>Dock51</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -16,29 +21,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBU-18-sTU">
-                                <rect key="frame" x="41" y="59" width="79.5" height="21"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Lives: 99">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="20" name="Dock51"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxV-fl-x5L">
-                                <rect key="frame" x="217.5" y="59" width="134" height="21"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Score: 999999">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="20" name="Dock51"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBU-18-sTU">
+                                <rect key="frame" x="41" y="59" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtq-MD-Snm">
@@ -50,56 +36,48 @@
                                     <action selector="StartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="dtW-65-Yz1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdR-0s-mOB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail Pilot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdR-0s-mOB">
                                 <rect key="frame" x="0.0" y="193" width="414" height="112"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="AEw-cy-pRB"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Mail Pilot">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="60" name="Dock51"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpv-Dv-Fx7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpv-Dv-Fx7">
                                 <rect key="frame" x="0.0" y="312" width="414" height="112"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="VNI-fB-Mva"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Game Over">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="60" name="Dock51"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXu-Dx-h8G">
                                 <rect key="frame" x="95" y="461" width="224" height="74"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="startButton"/>
+                                <buttonConfiguration key="configuration" style="plain" image="startButton" title=""/>
                                 <connections>
                                     <action selector="StartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="EIP-y7-97M"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 999999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxV-fl-x5L">
+                                <rect key="frame" x="249" y="58" width="134" height="21"/>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="GxV-fl-x5L" secondAttribute="trailing" constant="31" id="6kK-0h-tYg"/>
                             <constraint firstItem="sdR-0s-mOB" firstAttribute="trailing" secondItem="hpv-Dv-Fx7" secondAttribute="trailing" id="Cma-LQ-DcF"/>
                             <constraint firstItem="uXu-Dx-h8G" firstAttribute="top" secondItem="hpv-Dv-Fx7" secondAttribute="bottom" constant="37" id="HO8-G9-Hvk"/>
                             <constraint firstItem="hpv-Dv-Fx7" firstAttribute="top" secondItem="sdR-0s-mOB" secondAttribute="bottom" constant="7" id="Jgg-nH-rXD"/>
+                            <constraint firstItem="GxV-fl-x5L" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="14" id="MJi-C4-sFE"/>
                             <constraint firstItem="uXu-Dx-h8G" firstAttribute="leading" secondItem="Dtq-MD-Snm" secondAttribute="leading" id="Mn0-J3-hks"/>
-                            <constraint firstItem="GxV-fl-x5L" firstAttribute="leading" secondItem="zBU-18-sTU" secondAttribute="trailing" constant="97" id="Vp8-U6-why"/>
-                            <constraint firstItem="zBU-18-sTU" firstAttribute="baseline" secondItem="GxV-fl-x5L" secondAttribute="baseline" id="XgL-pw-Elv"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="Dtq-MD-Snm" secondAttribute="bottom" constant="253" id="YKb-nW-7UB"/>
                             <constraint firstItem="zBU-18-sTU" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="41" id="Yhp-VT-SAH"/>
                             <constraint firstItem="sdR-0s-mOB" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="hDF-AO-Ts0"/>
