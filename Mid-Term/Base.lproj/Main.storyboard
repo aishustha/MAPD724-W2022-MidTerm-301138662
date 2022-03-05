@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,37 +16,22 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="ICE_4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Mid_Term" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBU-18-sTU">
-                                <rect key="frame" x="41" y="59" width="80" height="21"/>
+                                <rect key="frame" x="85" y="37" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cwm-ZT-edr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail Pilot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdR-0s-mOB">
-                                <rect key="frame" x="0.0" y="193" width="414" height="112"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="112" id="AEw-cy-pRB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="60"/>
-                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpv-Dv-Fx7">
-                                <rect key="frame" x="0.0" y="312" width="414" height="112"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="112" id="VNI-fB-Mva"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="60"/>
-                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXu-Dx-h8G">
-                                <rect key="frame" x="95" y="461" width="224" height="74"/>
+                                <rect key="frame" x="336" y="229" width="224" height="74"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="startButton" title=""/>
                                 <connections>
@@ -54,13 +39,28 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 999999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxV-fl-x5L">
-                                <rect key="frame" x="249" y="58" width="134" height="21"/>
+                                <rect key="frame" x="687" y="36" width="134" height="21"/>
                                 <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtq-MD-Snm">
-                                <rect key="frame" x="95" y="592" width="224" height="74"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail Pilot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdR-0s-mOB">
+                                <rect key="frame" x="44" y="109" width="808" height="112"/>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpv-Dv-Fx7">
+                                <rect key="frame" x="44" y="109" width="808" height="112"/>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtq-MD-Snm">
+                                <rect key="frame" x="336" y="229" width="224" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="hUF-VS-P8J"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="restartButton" title=""/>
                                 <connections>
@@ -72,21 +72,23 @@
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="GxV-fl-x5L" secondAttribute="trailing" constant="31" id="6kK-0h-tYg"/>
-                            <constraint firstItem="sdR-0s-mOB" firstAttribute="trailing" secondItem="hpv-Dv-Fx7" secondAttribute="trailing" id="Cma-LQ-DcF"/>
-                            <constraint firstItem="uXu-Dx-h8G" firstAttribute="top" secondItem="hpv-Dv-Fx7" secondAttribute="bottom" constant="37" id="HO8-G9-Hvk"/>
-                            <constraint firstItem="hpv-Dv-Fx7" firstAttribute="top" secondItem="sdR-0s-mOB" secondAttribute="bottom" constant="7" id="Jgg-nH-rXD"/>
-                            <constraint firstItem="GxV-fl-x5L" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="14" id="MJi-C4-sFE"/>
-                            <constraint firstItem="uXu-Dx-h8G" firstAttribute="leading" secondItem="Dtq-MD-Snm" secondAttribute="leading" id="Mn0-J3-hks"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="Dtq-MD-Snm" secondAttribute="bottom" constant="253" id="YKb-nW-7UB"/>
-                            <constraint firstItem="zBU-18-sTU" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="41" id="Yhp-VT-SAH"/>
-                            <constraint firstItem="sdR-0s-mOB" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="hDF-AO-Ts0"/>
-                            <constraint firstItem="sdR-0s-mOB" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="kT2-VV-PON"/>
-                            <constraint firstItem="zBU-18-sTU" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="15" id="lRh-5G-AR9"/>
-                            <constraint firstAttribute="bottom" secondItem="uXu-Dx-h8G" secondAttribute="bottom" constant="361" id="laV-Wg-e3x"/>
-                            <constraint firstItem="Dtq-MD-Snm" firstAttribute="top" secondItem="uXu-Dx-h8G" secondAttribute="bottom" constant="31" id="roR-gJ-afh"/>
-                            <constraint firstItem="sdR-0s-mOB" firstAttribute="leading" secondItem="hpv-Dv-Fx7" secondAttribute="leading" id="rrA-Zk-F4J"/>
-                            <constraint firstItem="uXu-Dx-h8G" firstAttribute="centerX" secondItem="hpv-Dv-Fx7" secondAttribute="centerX" id="zed-nu-ggk"/>
+                            <constraint firstItem="GxV-fl-x5L" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="36" id="0oO-8g-OI6"/>
+                            <constraint firstItem="sdR-0s-mOB" firstAttribute="firstBaseline" secondItem="hpv-Dv-Fx7" secondAttribute="firstBaseline" id="2le-NN-BEM"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="uXu-Dx-h8G" secondAttribute="bottom" constant="90" id="Exn-sM-EJL"/>
+                            <constraint firstItem="hpv-Dv-Fx7" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="IkE-Rn-PDg"/>
+                            <constraint firstItem="Dtq-MD-Snm" firstAttribute="firstBaseline" secondItem="uXu-Dx-h8G" secondAttribute="firstBaseline" id="JXV-Wa-VKE"/>
+                            <constraint firstItem="sdR-0s-mOB" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" id="LTH-3o-qaO"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="GxV-fl-x5L" secondAttribute="trailing" constant="31" id="SaW-sx-et5"/>
+                            <constraint firstItem="hpv-Dv-Fx7" firstAttribute="trailing" secondItem="sdR-0s-mOB" secondAttribute="trailing" id="TWB-CI-ybU"/>
+                            <constraint firstItem="zBU-18-sTU" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="37" id="UXC-V8-uVX"/>
+                            <constraint firstItem="sdR-0s-mOB" firstAttribute="centerX" secondItem="uXu-Dx-h8G" secondAttribute="centerX" id="WJZ-zY-y1D"/>
+                            <constraint firstItem="uXu-Dx-h8G" firstAttribute="top" secondItem="sdR-0s-mOB" secondAttribute="bottom" constant="8" id="bqV-v2-6nJ"/>
+                            <constraint firstItem="hpv-Dv-Fx7" firstAttribute="baseline" secondItem="sdR-0s-mOB" secondAttribute="baseline" id="ctK-W5-ghN"/>
+                            <constraint firstItem="sdR-0s-mOB" firstAttribute="leading" secondItem="hpv-Dv-Fx7" secondAttribute="leading" id="cyn-1z-vaG"/>
+                            <constraint firstItem="zBU-18-sTU" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="41" id="dPd-Za-vqy"/>
+                            <constraint firstItem="sdR-0s-mOB" firstAttribute="top" secondItem="zBU-18-sTU" secondAttribute="bottom" constant="51" id="iy7-vV-Zq8"/>
+                            <constraint firstItem="Dtq-MD-Snm" firstAttribute="leading" secondItem="uXu-Dx-h8G" secondAttribute="leading" id="j9O-gs-s6r"/>
+                            <constraint firstItem="Dtq-MD-Snm" firstAttribute="baseline" secondItem="uXu-Dx-h8G" secondAttribute="baseline" id="ltR-oB-4at"/>
                         </constraints>
                     </view>
                     <connections>
