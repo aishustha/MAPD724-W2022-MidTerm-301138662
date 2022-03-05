@@ -1,9 +1,7 @@
-//
-//  Island.swift
-//  ICE-3
-//
-//  Created by Aishwarya Shrestha on 29/01/2022.
-//
+// File Name - MidTerm Test - Modify Mail Pilot
+// Author's Name - Aishwarya Shrestha
+// Student Id - 301138662
+// Date - 05/03/2022
 
 import GameplayKit
 import SpriteKit
@@ -27,7 +25,7 @@ class Island : GameObject
     override func CheckBounds()
     {
         //if position of my ocean is less than or equal to
-        if(position.y <= -730)
+        if(position.x <= -730)
         {
             Reset()
         }
@@ -36,11 +34,11 @@ class Island : GameObject
     //reset - whenever i'm in bottom it resets
     override func Reset()
     {
-        position.y = 730
+        position.x = 730
         //get a pseudo random number from -313 to 313
-        let randomX:Int = (randomSource?.nextInt(upperBound: 616))! - 313
+        let randomY:Int = (randomSource?.nextInt(upperBound: 616))! - 313
         
-        position.x = CGFloat(randomX)
+        position.y = CGFloat(randomY)
         isCollding = false
         //connect with island
     }
@@ -62,6 +60,6 @@ class Island : GameObject
     
     func Move()
     {
-        position.y -= verticalSpeed!
+        position.x -= verticalSpeed!
     }
 }

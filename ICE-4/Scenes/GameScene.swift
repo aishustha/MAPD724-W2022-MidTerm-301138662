@@ -1,9 +1,7 @@
-//
-//  GameScene.swift
-//  ICE-4
-//
-//  Created by Aishwarya Shrestha on 23/01/2022.
-//
+// File Name - MidTerm Test - Modify Mail Pilot
+// Author's Name - Aishwarya Shrestha
+// Student Id - 301138662
+// Date - 05/03/2022
 
 import UIKit
 import AVFoundation
@@ -35,7 +33,8 @@ class GameScene: SKScene
         
         // add ocean to the scene
         ocean = Ocean() // allocate memory
-        ocean?.position = CGPoint(x: 0, y: 773)
+        //Task2 - for landscape orientation
+        ocean?.position = CGPoint(x: 733, y: 0)
         addChild(ocean!) // add the ocean to the scene
         
         // add island to the scene
@@ -43,15 +42,17 @@ class GameScene: SKScene
         addChild(island!)
         
         // add plane to the scene
+        //task-5
         plane = Plane()
-        plane?.position = CGPoint(x: 0, y: -495)
+        plane?.position = CGPoint(x: -500, y: 0)
         addChild(plane!)
         
         //add 3 clouds to the scene
         //array of clouds
         //for loop
         //creating and adding to the scene
-        for index in  0...2
+        //task-1 -number of clouds -2
+        for index in  0...1
         {
             let cloud: Cloud = Cloud()
             clouds.append(cloud)
@@ -83,19 +84,20 @@ class GameScene: SKScene
     }
     
     //cgpoint - have x and y coordinates
+    //task-5
     func touchDown(atPoint pos : CGPoint)
     {
-        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -495))
+        plane?.TouchMove(newPos: CGPoint(x: -500, y: pos.y))
     }
     
     func touchMoved(toPoint pos : CGPoint)
     {
-        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -495))
+        plane?.TouchMove(newPos: CGPoint(x: -500, y: pos.y))
     }
     
     func touchUp(atPoint pos : CGPoint)
     {
-        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -495))
+        plane?.TouchMove(newPos: CGPoint(x: -500, y: pos.y))
         
     }
     

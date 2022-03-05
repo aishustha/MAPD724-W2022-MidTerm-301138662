@@ -1,9 +1,7 @@
-//
-//  Ocean.swift
-//  ICE-3
-//
-//  Created by Aishwarya Shrestha on 23/01/2022.
-//
+// File Name - MidTerm Test - Modify Mail Pilot
+// Author's Name - Aishwarya Shrestha
+// Student Id - 301138662
+// Date - 05/03/2022
 
 import GameplayKit
 import SpriteKit
@@ -27,7 +25,7 @@ class Ocean : GameObject
     override func CheckBounds()
     {
         //if position of my ocean is less than or equal to
-        if(position.y <= -773)
+        if(position.x <= -773)
         {
             Reset()
         }
@@ -36,7 +34,7 @@ class Ocean : GameObject
     //reset - whenever i'm in bottom it resets
     override func Reset()
     {
-        position.y = 773
+        position.x = 773
     }
     
     //Initialization
@@ -44,7 +42,7 @@ class Ocean : GameObject
     {
         //layering top of each other
         zPosition = 0
-        verticalSpeed = 5.0
+        horizontalSpeed = 5.0
     }
     
     override func Update()
@@ -55,6 +53,6 @@ class Ocean : GameObject
     
     func Move()
     {
-        position.y -= verticalSpeed!
+        position.x -= horizontalSpeed!
     }
 }

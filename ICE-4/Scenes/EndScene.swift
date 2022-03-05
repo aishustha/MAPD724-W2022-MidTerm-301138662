@@ -1,9 +1,7 @@
-//
-//  EndScene.swift
-//  ICE-4
-//
-//  Created by Aishwarya Shrestha on 09/02/2022.
-//
+// File Name - MidTerm Test - Modify Mail Pilot
+// Author's Name - Aishwarya Shrestha
+// Student Id - 301138662
+// Date - 05/03/2022
 
 import SpriteKit
 import GameplayKit
@@ -20,9 +18,10 @@ class EndScene: SKScene
         
         name = "End"
         
+        //task-2
         // add ocean to the scene
         ocean = Ocean() // allocate memory
-        ocean?.position = CGPoint(x: 0, y: 773)
+        ocean?.position = CGPoint(x: 773, y:0)
         addChild(ocean!) // add the ocean to the scene
     }
     

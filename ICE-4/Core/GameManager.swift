@@ -1,9 +1,7 @@
-//
-//  GameManager.swift
-//  ICE-4
-//
-//  Created by Aishwarya Shrestha on 09/02/2022.
-//
+// File Name - MidTerm Test - Modify Mail Pilot
+// Author's Name - Aishwarya Shrestha
+// Student Id - 301138662
+// Date - 05/03/2022
 
 protocol GameManager
 {

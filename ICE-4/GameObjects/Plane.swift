@@ -1,9 +1,7 @@
-//
-//  Plane.swift
-//  ICE-3
-//
-//  Created by Aishwarya Shrestha on 23/01/2022.
-//
+// File Name - MidTerm Test - Modify Mail Pilot
+// Author's Name - Aishwarya Shrestha
+// Student Id - 301138662
+// Date - 05/03/2022
 
 import GameplayKit
 import SpriteKit
@@ -23,19 +21,19 @@ class Plane : GameObject
     }
     
     // LifeCycle
-    
+    //task-5 - adjusted
     override func CheckBounds()
     {
         // constrain on the left boundary
-        if(position.x <= -310)
+        if(position.y <= -250)
         {
-            position.x = -310
+            position.y = -250
         }
         
         // constrain on the right boundary
-        if(position.x >= 310)
+        if(position.y >= 250)
         {
-            position.x = 310
+            position.y = 250
         }
     }
     
