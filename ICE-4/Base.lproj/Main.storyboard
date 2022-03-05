@@ -27,15 +27,6 @@
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtq-MD-Snm">
-                                <rect key="frame" x="95" y="566" width="224" height="74"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="restartButton" title=""/>
-                                <connections>
-                                    <action selector="EndButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="87T-8Z-wLC"/>
-                                    <action selector="StartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="dtW-65-Yz1"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail Pilot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdR-0s-mOB">
                                 <rect key="frame" x="0.0" y="193" width="414" height="112"/>
                                 <constraints>
@@ -68,6 +59,15 @@
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtq-MD-Snm">
+                                <rect key="frame" x="95" y="592" width="224" height="74"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="restartButton" title=""/>
+                                <connections>
+                                    <action selector="EndButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="87T-8Z-wLC"/>
+                                    <action selector="StartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="dtW-65-Yz1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -100,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124.6376811594203" y="54.910714285714285"/>
+            <point key="canvasLocation" x="124.55357142857142" y="53.623188405797109"/>
         </scene>
     </scenes>
     <resources>
