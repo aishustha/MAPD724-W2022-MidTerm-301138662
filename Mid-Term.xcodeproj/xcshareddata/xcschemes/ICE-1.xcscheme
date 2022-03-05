@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "618C0A11279E40E5007B128C"
-               BuildableName = "ICE-4.app"
-               BlueprintName = "ICE-4"
-               ReferencedContainer = "container:ICE-4.xcodeproj">
+               BuildableName = "Mid-Term.app"
+               BlueprintName = "Mid-Term"
+               ReferencedContainer = "container:Mid-Term.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "618C0A11279E40E5007B128C"
-            BuildableName = "ICE-4.app"
-            BlueprintName = "ICE-4"
-            ReferencedContainer = "container:ICE-4.xcodeproj">
+            BuildableName = "Mid-Term.app"
+            BlueprintName = "Mid-Term"
+            ReferencedContainer = "container:Mid-Term.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,9 +69,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "618C0A11279E40E5007B128C"
-            BuildableName = "ICE-4.app"
-            BlueprintName = "ICE-4"
-            ReferencedContainer = "container:ICE-4.xcodeproj">
+            BuildableName = "Mid-Term.app"
+            BlueprintName = "Mid-Term"
+            ReferencedContainer = "container:Mid-Term.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
